@@ -25,9 +25,9 @@ if [[ ! "$1" =~ ^(fmt|init|plan|validate)$ ]]; then
 fi
 
 if [[ -z $4 ]]; then
-  JOB_NAME=" JobName: \`\"$4\"\`"
-else
   JOB_NAME=""
+else
+  JOB_NAME=" JobName: \`\"$4\"\`"
 fi
 
 ##################
