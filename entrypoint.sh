@@ -27,7 +27,7 @@ fi
 if [[ -z $4 ]]; then
   JOB_NAME=""
 else
-  JOB_NAME=" JobName: \`\"$4\"\`"
+  JOB_NAME=" JobName: \`$4\`"
 fi
 
 ##################
