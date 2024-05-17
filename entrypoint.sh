@@ -41,7 +41,7 @@ INPUT=$(echo "$2" | sed 's/\x1b\[[0-9;]*m//g')
 EXIT_CODE=$3
 
 # Read TF_WORKSPACE environment variable or use "default"
-WORKSPACE=${TF_WORKSPACE:-default}
+WORKSPACE=`terraform workspace show`
 
 # Read EXPAND_SUMMARY_DETAILS environment variable or use "true"
 if [[ ${EXPAND_SUMMARY_DETAILS:-true} == "true" ]]; then
